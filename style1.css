@@ -1,0 +1,38 @@
+head{
+    background-image: url('head1.jpg');
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('background_2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+form{
+    padding-left:450px;
+    font-family: serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    left: 680px;
+    border: none;
+    color: black;
+    border-radius: 4px;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #4e42fb;
+    position: relative;
+    z-index: 1;
+    background-color:rgb(19, 207, 207);
+}
+
+label{
+    width: 320px;
+    display: inline-block;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style1.css"></link>
+       <h1 style="font-family:serif;text-align:center;font-size:50px;">CREATE TABLE</h1>
+       <br>
+       <script>
+           function buttonf()
+           {
+               window.close();
+           }
+       </script>
+    </head>
+    <body>
+        <form>
+            <label>Enter Table Name : </label>
+               <input type="text" id="tname" name="tname">
+            <br><br>
+            <label>Enter Primary Column Name : </label>
+               <input type="text" id="pname" name="pname">
+            <br><br>
+            <label>Enter Datatype : </label>  
+                <select name="pdatatype" id="pdatatype">
+                    <option value="integer">Number</option>
+                    <option value="boolean">Boolean</option>
+                    <option value="email">Email</option>
+                    <option value="datetime">Datetime</option>
+                    <option value="varchar" >String</option>
+                </select>    
+            <br><br>
+            <label>If chosen String, enter it's size : </label>
+                <input type="number" min="1" min"100" value="1">
+        </form>
+        <br><br>
+        <button type="button" onclick="buttonf()">OK</button>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style2.css"></link>
+        <script>
+           function open_COLUMN()
+           {
+               var tname=prompt("NAME THE TABLE YOU WANT TO ALTER");
+               var cname=prompt("ENTER THE COLUMN NAME");
+               window.close();
+           }
+           function open_ROW(){
+               var tname=prompt("NAME THE TABLE YOU WANT TO ALTER");
+                window.close();
+           }
+       </script>
+    </head>
+    
+    <body>
+        <div class="container">
+             <button class="btn-1" onclick="open_COLUMN()">ADD CLOUMN</button>
+             <button class="btn-2" onclick="open_ROW()">ADD ROW</button>
+        </div>
+</html>

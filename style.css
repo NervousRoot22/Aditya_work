@@ -1,0 +1,54 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 4px;
+    background-image: url("background_1.jpg");
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.btn-1,.btn-2,.btn-3{
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #42fbf2;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-1:hover,.btn-2:hover,.btn-3:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-1:before,.btn-2:before,.btn-3:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42fbf2;
+}
+
+.btn-1:hover:before,.btn-2:hover:before,.btn-3:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
